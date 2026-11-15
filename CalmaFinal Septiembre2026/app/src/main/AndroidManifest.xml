@@ -13,41 +13,41 @@
         android:theme="@style/Theme.CalmaFinal">
 
         <activity
-            android:name=".RegistroActivity"
+            android:name=".ui.RegistroActivity"
             android:exported="false" />
         <activity
-            android:name=".RespiracionActivity"
+            android:name=".ui.RespiracionActivity"
             android:exported="false" />
         <activity
-            android:name=".MusicaActivity"
+            android:name=".ui.MusicaActivity"
             android:exported="false" />
         <activity
-            android:name=".homeActivity"
+            android:name=".ui.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".PreviewWhatsAppActivity"
+            android:name=".ui.PreviewWhatsAppActivity"
             android:exported="false" />
         <activity
-            android:name=".RecuperarActivity"
+            android:name=".ui.RecuperarActivity"
             android:exported="false" />
 
         <!-- 🚨 Actividad añadida para el Módulo de Emergencia SOS -->
         <activity
-            android:name=".EmergencyActivity"
+            android:name=".ui.EmergencyActivity"
             android:exported="false" />
 
         <!-- 📞 Actividad añadida para los Contactos de Emergencia -->
         <activity
-            android:name=".ContactosEmergenciaActivity"
+            android:name=".ui.ContactosEmergenciaActivity"
             android:exported="false" />
 
         <!-- 📅 Actividad añadida para el Agendamiento de Citas -->
         <activity
-            android:name=".AppointmentActivity"
+            android:name=".ui.AppointmentActivity"
             android:exported="false" />
 
         <activity
-            android:name=".loginActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
