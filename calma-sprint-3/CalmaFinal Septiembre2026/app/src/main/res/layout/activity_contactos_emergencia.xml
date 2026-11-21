@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FBFB"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Título superior -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contactos de emergencia"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recibirán un mensaje con tu ubicación solo cuando actives la alerta."
+        android:textSize="13sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Formulario para agregar contacto -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar contacto"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#111111"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etNombreContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre (ej. Carmen Ruiz)"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/etTelefonoContacto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Teléfono (+57...)"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/etRelacionContacto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Relación (ej. Mamá)"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuardarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="+ Guardar contacto"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0F4C3A"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+</LinearLayout>
