@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de Emergencia -->
+    <TextView
+        android:id="@+id/tituloEmergencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚨 Módulo de Emergencia SOS"
+        android:textColor="@color/emergency_red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Banner de Alerta / Aviso -->
+    <TextView
+        android:id="@+id/bannerEmergencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/banner_red_bg"
+        android:padding="12dp"
+        android:text="Usa este botón solo en situaciones de crisis para compartir tu ubicación en tiempo real."
+        android:textColor="@color/emergency_red"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <!-- Tarjeta de información de soporte -->
+    <LinearLayout
+        android:id="@+id/tarjetaSoporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Línea de Apoyo Inmediato"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Disponible 24/7 para atención prioritaria corporativa y personal."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <!-- Botón de SOS / Alerta -->
+    <Button
+        android:id="@+id/btnEmergenciaSos"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/emergency_red"
+        android:text="ACTIVAR ALERTA SOS"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
